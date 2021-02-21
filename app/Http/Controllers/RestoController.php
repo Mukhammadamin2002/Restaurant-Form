@@ -7,6 +7,10 @@ use App\Models\Restaurant;
 
 class RestoController extends Controller
 {
+    function index() 
+    {
+    	return view('home');
+    }
     function list()
     {
     	return Restaurant::all();
